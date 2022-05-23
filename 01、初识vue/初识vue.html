@@ -9,17 +9,23 @@
 </head>
 <body>
     <div id="root">
-        <h1>Helle {{name}}Jonty</h1>
+        <h1>Helle Jonty {{name}}</h1>
     </div>
     
     <script>
-        Vue.config.productionTip=false; // 阻止Vue在启动时生成安全提示
+         Vue.config.productionTip=false; // 阻止Vue在启动时生成安全提示
         const app = new Vue({
-            el:'#root',
-            data:{
+            el:'#root', // 指定当前Vue实例为哪个容器服务,值通常是css选择器
+            data:{ // data中用于存储数据
                 name:'Wang'
             }
         });
     </script>
 </body>
 </html>
+
+<!--
+    1、想让Vue工作，需要创建一个Vue实例，且要传入一个配置对象
+    2、root容器里的代码依然符合html规范，不过混入了一些特殊的Vue语法
+    3、root容器里的代码成为Vue模板
+-->
