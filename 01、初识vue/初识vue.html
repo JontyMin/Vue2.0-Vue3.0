@@ -9,15 +9,18 @@
 </head>
 <body>
     <div id="root">
-        <h1>Helle Jonty {{name}}</h1>
+        <h1>Helle Jonty {{name}}，{{address}}</h1>
     </div>
     
     <script>
-         Vue.config.productionTip=false; // 阻止Vue在启动时生成安全提示
-        const app = new Vue({
+        Vue.config.productionTip=false; // 阻止Vue在启动时生成安全提示 
+
+        // 容器和实例 1对1 
+        new Vue({
             el:'#root', // 指定当前Vue实例为哪个容器服务,值通常是css选择器
             data:{ // data中用于存储数据
-                name:'Wang'
+                name:'Wang',
+                address:'苏州'
             }
         });
     </script>
