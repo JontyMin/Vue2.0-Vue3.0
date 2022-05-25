@@ -21,3 +21,5 @@
 ## MVVM
 
 ![image-20220523233043478](https://cdn.jonty.top/img/image-20220523233043478.png)
+
+![image-20220523234809406](https://cdn.jonty.top/img/image-20220523234809406.png)
